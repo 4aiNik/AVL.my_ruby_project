@@ -1,0 +1,9 @@
+header.navbar.navbar-default.container role="navigation"
+  .navbar.header
+    a.brand= link_to 'EXPERTISE', root_path, id: "logo"
+    nav#navbarCollapse.collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li= link_to 'главная', root_path
+        li= link_to 'помощь', help_path
+        li= link_to 'контакты', contacts_path
+        li= link_to 'о сайте', about_path
