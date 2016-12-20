@@ -1,9 +1,9 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  include SessionsHelper # to see in views and controllers
-
   before_action :set_locale
+
+  include SessionsHelper
 
   def extr_locale_in_accept_lang
     locale = params[:locale]#.scan(/^[a-z]{2}/).first
@@ -25,12 +25,14 @@ class ApplicationController < ActionController::Base
       params[:locale]
     end
   end
-# end
 
   def set_locale
     I18n.locale = set_locale_from_params || I18n.default_locale
     Rails.application.routes.default_url_options[:locale]= I18n.locale
   end
 
+  def default_url_options()
+    { locale: I18n.locale }
+  end
 
 end
