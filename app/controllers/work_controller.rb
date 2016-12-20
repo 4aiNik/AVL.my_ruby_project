@@ -3,9 +3,13 @@ class WorkController < ApplicationController
   include WorkImage
 
   def index
+    unless signed_in?
+      redirect_to root_path
+    end
+
     @images_count = Image.all.count
     # @selected_theme = "Select theme to leave your answer"
-    @selected_image_name = 'радуга'
+    @selected_image_name = ''
     @values_qty = Value.all.count
     @current_locale = I18n.locale
     session[:selected_theme_id] = @selected_theme # to display nothing
