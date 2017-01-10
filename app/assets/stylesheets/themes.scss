@@ -1,3 +1,10 @@
 // Place all the styles related to the Themes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h3.up-theme, h3.up {
+  margin-top: 0;
+}
+
+select#theme {
+  width: 12em;
+}

@@ -50,43 +50,43 @@ ru:
 
   work:
 
-    index:
-      def_select_theme: "Выберите тему для оценки"
+#    index:
+#      def_select_theme: "Выберите тему для оценки"
 
     button_theme_select:
       select_theme_bt: "выбрать тему"
 
 
-    button_list_results:
-      results_list: "результаты"
+#    button_list_results:
+#      results_list: "результаты"
 
     choose_theme_from_arr:
       select_theme: "выберите тему"
 
-    images:
-      common_value: "средняя оценка"
-      total_values: "всего оценок"
-
-      make_decision: "Выберите свою оценку"
-      save_decision: "сохранить"
-
-      share_opinion: "Поделись своим мнением"
+#    images:
+#      common_value: "средняя оценка"
+#      total_values: "всего оценок"
+#
+#      make_decision: "Выберите свою оценку"
+#      save_decision: "сохранить"
+#
+#      share_opinion: "Поделись своим мнением"
 
 
       # titles
-      theme_name: "Тема"
+#      theme_name: "Тема"
 
-    display_theme:
-      select_theme: "Выберите тему для оценки"
+#    display_theme:
+#      select_theme: "Выберите тему для оценки"
 
 
-    results_list:
-      no_values: "Результаты по выбранной теме отсутствуют..."
-      select_theme: "Выберите другую тему"
-      return_to_main: "На главную"
+#    results_list:
+#      no_values: "Результаты по выбранной теме отсутствуют..."
+#      select_theme: "Выберите другую тему"
+#      return_to_main: "На главную"
 
       # titles
-      page_title: "Перейдите к выбору темы"
+#      page_title: "Перейдите к выбору темы"
 
 
 

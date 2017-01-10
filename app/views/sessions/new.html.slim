@@ -3,11 +3,11 @@ h1= t('.sign_in')
 .row
   .span6.offset3
     = form_for(:session, url: sessions_path) do |f|
-      = f.label  'email'
+      = f.label  t('.email')
       = f.text_field :email
-      = f.label 'password'
+      = f.label t('.password')
       = f.password_field :password
-      = f.submit 'sign_in', class: "btn btn-large btn-primary"
+      = f.submit t('.sign_in'), class: "btn btn-large btn-primary"
     p.sign_up_link
-      = 'new_user?'
-      = link_to 'sign_up', signup_path
+      = t('.new_user?')
+      = link_to t('.sign_up'), signup_path

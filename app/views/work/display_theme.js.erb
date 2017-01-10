@@ -1,8 +1,8 @@
 // get data from controller		контроль в консоли
 var imageData = '<%= raw @image_data %>';
-console.log("IN display_theme: @image_data = " + imageData );
+//console.log("IN display_theme: @image_data = " + imageData );
 var valuesQty = '<%= @image_data[:values_qty] %>';
-console.log("IN display_theme: valuesQty = " + valuesQty );
+//console.log("IN display_theme: valuesQty = " + valuesQty );
 $('.left_controls span.total_values h2.total').append().html(valuesQty);
 
 
@@ -45,7 +45,7 @@ var selectedThemeId = '<%= @image_data[:theme_id] %>';
 // show name of image
 //var nameImage = selectedImage.slice(0,-4) ;  // put away . file .jpr
 $('.image_display h3.up').append().html(oneImageName);
-console.log(oneImageName);
+//console.log(oneImageName);
 
 // show image
 var pathImage = "assets/pictures/" + oneImageFile;
@@ -66,7 +66,7 @@ $('.img-right-side').click(function(event) {
             length: themeImagesSize },
         dataType: 'json'
     }).done(function (data_return) {
-        console.log("success1c:  " + data_return.notice );
+//        console.log("success1c:  " + data_return.notice );
         imageCurrentIndex = data_return.new_image_index;
         oneImageName = data_return.name;
         oneImageFile = data_return.file;
