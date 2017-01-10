@@ -1,14 +1,9 @@
 header.navbar.navbar-default.container role="navigation"
   .navbar.header
     a.brand= link_to t('.logo_title'), root_path, id: "logo"
-    nav#navbarCollapse.collapse.navbar-collapse
+    nav#navbarCollapse.collapse.navbar-collapse.row
 
-      = link_to image_tag("Russia.jpg", alt: "",  style: "width: 10%; height: 10%", title: "Русский" ), locale: :ru
-      = link_to image_tag("United_Kingdom.jpg", alt: "",  style: "width: 10%; height: 10%", title: "English"), locale: :en
-      b
-        = I18n.locale
-
-      ul.nav.navbar-nav
+      ul.nav.navbar-nav.col-md-9
         li= link_to t('.home'), root_path
         li= link_to t('.help'), help_path
         li= link_to t('.contact'), contacts_path
@@ -30,3 +25,9 @@ header.navbar.navbar-default.container role="navigation"
                 = link_to t('.sign_out'), signout_path, method: "delete"
         - else
           li= link_to t('.sign_in'), signin_path
+
+      div.col-md-3
+        = link_to image_tag("Russia.jpg", alt: "", title: "Русский"), locale: :ru
+        = link_to image_tag("United_Kingdom.jpg", alt: "", title: "English"), locale: :en
+        b
+          = I18n.locale
