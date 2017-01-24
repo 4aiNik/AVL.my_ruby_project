@@ -112,6 +112,11 @@ en:
 
 
   main:
+    index:
+      welcome: "Welcome to the MyExpertise"
+      app: "Ruby on Rails sample application"
+      work: "Proceed to work!"
+      sign: "Sign up now!"
     about:
       about_title: "About"
 

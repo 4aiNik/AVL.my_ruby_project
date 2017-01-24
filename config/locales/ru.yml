@@ -91,6 +91,11 @@ ru:
 
 
   main:
+    index:
+      welcome: "Добро пожаловать в MyExpertise"
+      app: "Пример приложения на Ruby on Rails"
+      work: "Экспертиза"
+      sign: "Регистрация"
     about:
       about_title: "О сайте"
 
